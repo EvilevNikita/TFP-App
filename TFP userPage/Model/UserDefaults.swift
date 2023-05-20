@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+enum Keys: String {
+  case usernameKey = "username"
+  case bioKey = "bio"
+  case city = "city"
+  case isDarkThemeKey = "isDarkTheme"
+  case creatorRoleKey = "creatorRole"
+}

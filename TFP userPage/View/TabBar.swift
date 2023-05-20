@@ -8,43 +8,57 @@
 import SwiftUI
 
 struct TabBar: View {
-    
-    init() {
-        let tabBarAppearance = UITabBarAppearance()
-        tabBarAppearance.configureWithOpaqueBackground()
-        tabBarAppearance.backgroundColor = UIColor.systemBackground // Задайте нужный цвет здесь
-        tabBarAppearance.shadowColor = .clear // Убираем тень
-        UITabBar.appearance().standardAppearance = tabBarAppearance
-    }
 
-    var body: some View {
-        TabView {
-            NewPublications()
-                .tabItem {
-                    Image(systemName: "star")
-                }
-                .background(Color.clear)
-            
-            SearchingPage()
-                .tabItem {
-                    Image(systemName: "magnifyingglass")
-                }
-                .background(Color.clear)
-            
-            UserPage()
-                .tabItem {
-                    Image(systemName: "person")
-                }
-                .background(Color.clear)
+  @State private var currentUser = CurrentUser()
+  @StateObject private var settings = SettingsViewModel()
+  
+  init() {
+    let tabBarAppearance = UITabBarAppearance()
+    tabBarAppearance.configureWithOpaqueBackground()
+    tabBarAppearance.backgroundColor = UIColor.systemBackground
+    tabBarAppearance.shadowColor = .clear
+    UITabBar.appearance().standardAppearance = tabBarAppearance
+  }
+  
+  var body: some View {
+    TabView {
+      NewPublications()
+        .tabItem {
+          Label("", systemImage: "star")
+            .environment(\.symbolVariants, .none)
         }
-        .accentColor(Color(.label))
-        .edgesIgnoringSafeArea(.all)
+        .background(Color.clear)
+      
+      SearchingPage()
+        .tabItem {
+          Label("", systemImage: "magnifyingglass")
+            .environment(\.symbolVariants, .none)
+        }
+        .background(Color.clear)
+      
+      MainMessagesView()
+        .tabItem {
+          Label("", systemImage: "message")
+            .environment(\.symbolVariants, .none)
+        }
+        .background(Color.clear)
+      
+      UserPage()
+        .tabItem {
+          Label("", systemImage: "person")
+            .environment(\.symbolVariants, .none)
+        }
+        .background(Color.clear)
     }
+    .accentColor(Color(.label))
+    .edgesIgnoringSafeArea(.all)
+  }
 }
 
 struct TabBar_Previews: PreviewProvider {
-    static var previews: some View {
-        TabBar()
-    }
+  
+  static var previews: some View {
+    TabBar()
+  }
 }
 

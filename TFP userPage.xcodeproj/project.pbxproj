@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6401375E29FD49D300FFB905 /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6401375D29FD49D300FFB905 /* CurrentUser.swift */; };
 		640280C129F654F600B5451F /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640280C029F654F600B5451F /* TabBar.swift */; };
 		640280C429F6575500B5451F /* SearchingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640280C329F6575500B5451F /* SearchingPage.swift */; };
 		640280C629F65C6200B5451F /* NewPublications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640280C529F65C6200B5451F /* NewPublications.swift */; };
@@ -18,15 +19,27 @@
 		640280D729F80C9100B5451F /* PhotoSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640280D629F80C9100B5451F /* PhotoSlider.swift */; };
 		640280D929F8228400B5451F /* CreatorsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640280D829F8228400B5451F /* CreatorsList.swift */; };
 		640280DB29F82D9100B5451F /* ChooseCreatorPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640280DA29F82D9100B5451F /* ChooseCreatorPage.swift */; };
+		6405734229FE2D4500717678 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6405734129FE2D4500717678 /* SettingsViewModel.swift */; };
+		641D807D29FFA6BC00F57188 /* CreateNewUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641D807C29FFA6BC00F57188 /* CreateNewUserView.swift */; };
+		641D80812A0228C200F57188 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641D80802A0228C200F57188 /* AppDelegate.swift */; };
+		641D80832A0272A600F57188 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641D80822A0272A600F57188 /* UserDefaults.swift */; };
 		6427CD4429F0164E007294EC /* TFP_userPageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6427CD4329F0164E007294EC /* TFP_userPageApp.swift */; };
 		6427CD4629F0164E007294EC /* UserPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6427CD4529F0164E007294EC /* UserPage.swift */; };
 		6427CD4829F0164F007294EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6427CD4729F0164F007294EC /* Assets.xcassets */; };
 		6427CD4B29F0164F007294EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6427CD4A29F0164F007294EC /* Preview Assets.xcassets */; };
+		642EDE4B29FB9D6900739A5E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642EDE4A29FB9D6900739A5E /* LoginView.swift */; };
+		642EDE4D29FB9DC800739A5E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642EDE4C29FB9DC800739A5E /* ImagePicker.swift */; };
+		642EDE5029FB9E1D00739A5E /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642EDE4F29FB9E1D00739A5E /* FirebaseManager.swift */; };
+		642EDE5529FBA7D300739A5E /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642EDE5429FBA7D300739A5E /* AuthViewModel.swift */; };
 		64AA391329FA88D400A6FE69 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AA391229FA88D400A6FE69 /* SettingsView.swift */; };
-		64AA391529FABCCA00A6FE69 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AA391429FABCCA00A6FE69 /* UserDefaultsKeys.swift */; };
+		64AA391729FB87F300A6FE69 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AA391629FB87F300A6FE69 /* Message.swift */; };
+		64AA391929FB8A2400A6FE69 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64AA391829FB8A2400A6FE69 /* GoogleService-Info.plist */; };
+		64AA391B29FB8F3500A6FE69 /* MainMessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AA391A29FB8F3500A6FE69 /* MainMessagesView.swift */; };
+		9D0387A87AE3FF0EE1BB3682 /* Pods_TFP_userPage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A3FF609DFB9B259159ACC4 /* Pods_TFP_userPage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6401375D29FD49D300FFB905 /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		640280C029F654F600B5451F /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		640280C329F6575500B5451F /* SearchingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingPage.swift; sourceTree = "<group>"; };
 		640280C529F65C6200B5451F /* NewPublications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPublications.swift; sourceTree = "<group>"; };
@@ -38,13 +51,26 @@
 		640280D629F80C9100B5451F /* PhotoSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSlider.swift; sourceTree = "<group>"; };
 		640280D829F8228400B5451F /* CreatorsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorsList.swift; sourceTree = "<group>"; };
 		640280DA29F82D9100B5451F /* ChooseCreatorPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCreatorPage.swift; sourceTree = "<group>"; };
+		6405734129FE2D4500717678 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		641D807C29FFA6BC00F57188 /* CreateNewUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewUserView.swift; sourceTree = "<group>"; };
+		641D80802A0228C200F57188 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		641D80822A0272A600F57188 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		6427CD4029F0164D007294EC /* TFP userPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TFP userPage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6427CD4329F0164E007294EC /* TFP_userPageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFP_userPageApp.swift; sourceTree = "<group>"; };
 		6427CD4529F0164E007294EC /* UserPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPage.swift; sourceTree = "<group>"; };
 		6427CD4729F0164F007294EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6427CD4A29F0164F007294EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		642EDE4A29FB9D6900739A5E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		642EDE4C29FB9DC800739A5E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		642EDE4F29FB9E1D00739A5E /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		642EDE5429FBA7D300739A5E /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		64AA391229FA88D400A6FE69 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		64AA391429FABCCA00A6FE69 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		64AA391629FB87F300A6FE69 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		64AA391829FB8A2400A6FE69 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		64AA391A29FB8F3500A6FE69 /* MainMessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMessagesView.swift; sourceTree = "<group>"; };
+		C70A8957E6FD5F7118166073 /* Pods-TFP userPage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFP userPage.debug.xcconfig"; path = "Target Support Files/Pods-TFP userPage/Pods-TFP userPage.debug.xcconfig"; sourceTree = "<group>"; };
+		D32E8B6546F3C35245240316 /* Pods-TFP userPage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFP userPage.release.xcconfig"; path = "Target Support Files/Pods-TFP userPage/Pods-TFP userPage.release.xcconfig"; sourceTree = "<group>"; };
+		F2A3FF609DFB9B259159ACC4 /* Pods_TFP_userPage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFP_userPage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D0387A87AE3FF0EE1BB3682 /* Pods_TFP_userPage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +97,9 @@
 				640280D629F80C9100B5451F /* PhotoSlider.swift */,
 				640280CA29F6714900B5451F /* ChooseCityPage.swift */,
 				640280DA29F82D9100B5451F /* ChooseCreatorPage.swift */,
+				64AA391A29FB8F3500A6FE69 /* MainMessagesView.swift */,
+				642EDE4A29FB9D6900739A5E /* LoginView.swift */,
+				641D807C29FFA6BC00F57188 /* CreateNewUserView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -77,11 +107,13 @@
 		640280C729F663D600B5451F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6401375D29FD49D300FFB905 /* CurrentUser.swift */,
 				640280C829F663F900B5451F /* Cities.swift */,
 				640280D029F6E6E400B5451F /* Portfolio.swift */,
 				640280D229F6E77300B5451F /* References.swift */,
 				640280D829F8228400B5451F /* CreatorsList.swift */,
-				64AA391429FABCCA00A6FE69 /* UserDefaultsKeys.swift */,
+				64AA391629FB87F300A6FE69 /* Message.swift */,
+				641D80822A0272A600F57188 /* UserDefaults.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -91,6 +123,8 @@
 			children = (
 				6427CD4229F0164E007294EC /* TFP userPage */,
 				6427CD4129F0164D007294EC /* Products */,
+				88F90725E550B98603CA1392 /* Pods */,
+				C9F64AECA7D2FA3BA8FDD1AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				6427CD4329F0164E007294EC /* TFP_userPageApp.swift */,
+				642EDE4E29FB9E0400739A5E /* Utils */,
+				642EDE5329FBA78600739A5E /* ViewModel */,
 				640280C729F663D600B5451F /* Model */,
 				640280BF29F6524600B5451F /* View */,
 				6427CD4729F0164F007294EC /* Assets.xcassets */,
@@ -117,9 +153,46 @@
 		6427CD4929F0164F007294EC /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				64AA391829FB8A2400A6FE69 /* GoogleService-Info.plist */,
 				6427CD4A29F0164F007294EC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		642EDE4E29FB9E0400739A5E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				642EDE4F29FB9E1D00739A5E /* FirebaseManager.swift */,
+				642EDE4C29FB9DC800739A5E /* ImagePicker.swift */,
+				641D80802A0228C200F57188 /* AppDelegate.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		642EDE5329FBA78600739A5E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				642EDE5429FBA7D300739A5E /* AuthViewModel.swift */,
+				6405734129FE2D4500717678 /* SettingsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		88F90725E550B98603CA1392 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C70A8957E6FD5F7118166073 /* Pods-TFP userPage.debug.xcconfig */,
+				D32E8B6546F3C35245240316 /* Pods-TFP userPage.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C9F64AECA7D2FA3BA8FDD1AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2A3FF609DFB9B259159ACC4 /* Pods_TFP_userPage.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,9 +202,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6427CD4E29F0164F007294EC /* Build configuration list for PBXNativeTarget "TFP userPage" */;
 			buildPhases = (
+				FC58699B31AE30F870328748 /* [CP] Check Pods Manifest.lock */,
 				6427CD3C29F0164D007294EC /* Sources */,
 				6427CD3D29F0164D007294EC /* Frameworks */,
 				6427CD3E29F0164D007294EC /* Resources */,
+				20D2507261B3210F379D7620 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,29 +257,82 @@
 			files = (
 				6427CD4B29F0164F007294EC /* Preview Assets.xcassets in Resources */,
 				6427CD4829F0164F007294EC /* Assets.xcassets in Resources */,
+				64AA391929FB8A2400A6FE69 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20D2507261B3210F379D7620 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TFP userPage/Pods-TFP userPage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TFP userPage/Pods-TFP userPage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TFP userPage/Pods-TFP userPage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC58699B31AE30F870328748 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TFP userPage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6427CD3C29F0164D007294EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				641D80812A0228C200F57188 /* AppDelegate.swift in Sources */,
 				640280C929F663F900B5451F /* Cities.swift in Sources */,
+				6405734229FE2D4500717678 /* SettingsViewModel.swift in Sources */,
 				640280C129F654F600B5451F /* TabBar.swift in Sources */,
+				6401375E29FD49D300FFB905 /* CurrentUser.swift in Sources */,
 				6427CD4629F0164E007294EC /* UserPage.swift in Sources */,
+				641D80832A0272A600F57188 /* UserDefaults.swift in Sources */,
 				640280D129F6E6E400B5451F /* Portfolio.swift in Sources */,
 				640280D929F8228400B5451F /* CreatorsList.swift in Sources */,
 				640280D329F6E77400B5451F /* References.swift in Sources */,
 				640280C629F65C6200B5451F /* NewPublications.swift in Sources */,
-				64AA391529FABCCA00A6FE69 /* UserDefaultsKeys.swift in Sources */,
+				641D807D29FFA6BC00F57188 /* CreateNewUserView.swift in Sources */,
+				642EDE4D29FB9DC800739A5E /* ImagePicker.swift in Sources */,
 				64AA391329FA88D400A6FE69 /* SettingsView.swift in Sources */,
 				640280D529F6E8DF00B5451F /* PhotosGridView.swift in Sources */,
 				640280DB29F82D9100B5451F /* ChooseCreatorPage.swift in Sources */,
+				642EDE5029FB9E1D00739A5E /* FirebaseManager.swift in Sources */,
 				6427CD4429F0164E007294EC /* TFP_userPageApp.swift in Sources */,
+				642EDE4B29FB9D6900739A5E /* LoginView.swift in Sources */,
 				640280D729F80C9100B5451F /* PhotoSlider.swift in Sources */,
+				64AA391729FB87F300A6FE69 /* Message.swift in Sources */,
+				642EDE5529FBA7D300739A5E /* AuthViewModel.swift in Sources */,
+				64AA391B29FB8F3500A6FE69 /* MainMessagesView.swift in Sources */,
 				640280CB29F6714900B5451F /* ChooseCityPage.swift in Sources */,
 				640280C429F6575500B5451F /* SearchingPage.swift in Sources */,
 			);
@@ -263,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -317,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -329,6 +457,7 @@
 		};
 		6427CD4F29F0164F007294EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C70A8957E6FD5F7118166073 /* Pods-TFP userPage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -349,7 +478,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.IvlevNikita.TFP-userPage";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.IvlevNikita.TFP-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -359,6 +488,7 @@
 		};
 		6427CD5029F0164F007294EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D32E8B6546F3C35245240316 /* Pods-TFP userPage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -379,7 +509,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.IvlevNikita.TFP-userPage";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.IvlevNikita.TFP-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
