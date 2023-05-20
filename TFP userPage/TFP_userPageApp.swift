@@ -10,7 +10,7 @@ import Firebase
 import FirebaseAuth
 
 @main
-struct TFP_userPageApp: App {
+struct TFP_App: App {
   @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
   @StateObject var auth = AuthViewModel()
   @StateObject var settings = SettingsViewModel()
