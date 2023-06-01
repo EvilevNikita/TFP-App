@@ -44,12 +44,14 @@ struct CreateNewUserView: View {
                           .resizable()
                           .scaledToFill()
                           .frame(width: 100, height: 100)
+                          .clipShape(RoundedRectangle(cornerRadius: 64))
                   } else {
                       Image(systemName: "person.fill")
                           .font(.system(size: 50))
                           .padding()
                           .foregroundColor(Color(.label))
                           .frame(width: 100, height: 100)
+                          .clipShape(RoundedRectangle(cornerRadius: 64))
                   }
               }
               .overlay(RoundedRectangle(cornerRadius: 64)
