@@ -1,6 +1,6 @@
 # TFP-App
-The application helps creative people such as photographers and models get to know each other and agree on joint shootings for a portfolio. 
-Application built on SwiftUI on MVVM architecture, backing implemented using Firebase
+This is my pet-project. The application helps creative people such as photographers and models get to know each other and agree on joint shootings for a portfolio. 
+Application built on SwiftUI on MVVM architecture, backend implemented using Firebase
 
 <img src="https://github.com/EvilevNikita/TFP-App/assets/116057796/687ce45f-3c45-4036-a2be-f8fa5ad91b4b" width="250">
 <img src="https://github.com/EvilevNikita/TFP-App/assets/116057796/863a6450-9540-4bd7-bf94-aa3f71368148" width="250">
